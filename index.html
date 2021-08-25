@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CV</title>
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        }
+        div {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1,h2,h3,h4 {
+        text-transform: uppercase;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+            padding: 20px;
+        }
+
+    
+        .left-part {
+            display: flex;
+            flex: 25%;
+            flex-direction: column;
+            background-color: #FAEBD7;
+            padding: 10px;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .left-part h1{
+            text-align: center;
+        }
+        .avatar {
+            text-align: center;
+        }
+        .right-part {
+            flex: 75%;
+            padding: 10px;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+
+        img {
+        max-width:70%;
+        border-radius: 100px; 
+        }
+        
+        .cv-item {
+            padding-bottom: 30px;
+
+        }
+        h3 {
+            letter-spacing: 5px;
+        }
+        .position {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        .name {
+            letter-spacing: 5px;
+            padding-top: 30px;
+        }
+        .contacts {
+            padding-top: 20px;
+        }
+
+        .contacts div {
+            line-height: 2.0;
+        }
+
+        .contacts a {
+            text-decoration: none;
+        }
+
+        ul {
+        padding-inline-start: 20px;
+        }
+        
+        pre {
+        margin: 0px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+        <aside class="left-part">
+            <div class="avatar">
+            <img class="avatar" src="avatar.jpeg">
+            </div>
+
+            <div class="name"><h1>Svitlana Ryashchenko</h1></div>
+            <div class="position"><h4>Junior Frontend Developer</h4></div>
+           
+            <div class="cv-item contacts">
+
+            <div class="adres">Address: Prague, Czech Republic</div>
+            <div class="phone">Phone: <a href="tel:+420776526883">(+420)776 526 883</a></div>
+            <div class="email">E-mail: <a href = "mailto: siliel.ua@gmail.com">siliel.ua@gmail.com</a></div>
+            <div class="telegram">Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></div>
+            </div>
+
+        </aside>
+
+        <section class="right-part">
+            
+
+            <div class="cv-item about"><h3 class="item-title">About Myself</h3>   <hr>
+             
+            <p>I have financial education and started my acquaintance with programming with Harvard online course CS50. 
+                Sucsefully finished it with final project on Python and continued to learn this language. 
+                I made second project on Python (Flask) - parcel traking for online shop. 
+                            Also I began learning Wordpress for my own needs and as a result I made some web-pages. 
+                While I was working on this, I faced the need to deepen my knowledge of CSS, 
+                as well as the need to start learning JS. I began to learn JS and how to write HTML code. 
+                I continue to grow and develop in learning JS.</p>
+            
+            <p>I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
+                punctual and assiduous. </p>
+            </div>
+
+            <div class="cv-item education">
+                <h3 class="item-title">Education</h3>
+                <hr>
+                <p>Bachelor Management of Organizations <br>
+                Kyiv National Economic Univercity <br>
+                2000-2004</p>
+            </div>
+
+            <div class="cv-item skills">
+            <h3 class="item-title">Skills and Proficiency</h3>
+            <hr>
+            <ul class="item-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Wordpress</li>
+            <li>Python (basic knowledge) - Flask, Django</li>
+            <li>JavaScript (basic knowledge)</li>
+            <li>Git</li>
+            <li>Adobe Xd</li>
+                </ul>
+            </div>
+
+            <div class="cv-item courses">
+                <h3 class="item-title">Courses</h3>
+                <hr>
+                <ul class="item-list">
+            <li>Harvard CS50</li>
+            <li>Udemy: Learn to Program in Javascript: Beginner to Pro</li>
+            <li>Udemy: The Complete Web Developer Course 2.0</li>
+            <li>Udemy: The Python Mega Course: Build 10 Real World Applications</li>
+                </ul>
+            </div>
+
+            <div class="cv-item code"> 
+                <h3 class="item-title">Code example</h3>
+                <hr>
+
+            <p class="code-description">KATA from CODEWARS: In a small town there is the population (p0) 
+                at the beginning of a year. The population regularly increases by percents (percent) per year 
+                and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does 
+                the town need to see its population greater or equal to (p) inhabitants?</p>
+            
+            <pre>
+            function nbYear(p0, percent, aug, p) { <br>
+                var n = 1; <br>
+                for (var i = 0; p0 <= p; i++) {<br>
+                    var population = p0 + Math.floor(p0/100*percent) + aug;<br>
+                    p0 = population;<br>
+                
+                    if (p0 <= p) {<br>
+                      n ++;<br>
+                    } else {<br>
+                      return n;<br>
+                    }<br>
+                }<br>
+            } nbYear(p0, percent, aug, p)<br>
+
+            </pre>
+            </div>
+
+            <div class="cv-item languages">
+                <h3 class="item-title">Languages</h3>
+                <hr>
+                <ul class="item-list">
+            <li>Russian - Native</li>
+            <li>Ukrainian - Native</li>
+            <li>English - Upper-intermediate</li>
+            <li>Czech  - Elementary</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </div>  
+  </body>
+</html>
