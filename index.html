@@ -1,125 +1,34 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>CV</title>
-    <style>
-        body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.1em;
-        }
-        div {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        h1,h2,h3,h4 {
-        text-transform: uppercase;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-self: center;
-            padding: 20px;
-        }
-
-    
-        .left-part {
-            display: flex;
-            flex: 25%;
-            flex-direction: column;
-            background-color: #FAEBD7;
-            padding: 10px;
-            padding-top: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .left-part h1{
-            text-align: center;
-        }
-        .avatar {
-            text-align: center;
-        }
-        .right-part {
-            flex: 75%;
-            padding: 10px;
-            padding-top: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-            
-        }
-
-        img {
-        max-width:70%;
-        border-radius: 100px; 
-        }
-        
-        .cv-item {
-            padding-bottom: 30px;
-
-        }
-        h3 {
-            letter-spacing: 5px;
-        }
-        .position {
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 30px;
-        }
-        .name {
-            letter-spacing: 5px;
-            padding-top: 30px;
-        }
-        .contacts {
-            padding-top: 20px;
-        }
-
-        .contacts div {
-            line-height: 2.0;
-        }
-
-        .contacts a {
-            text-decoration: none;
-        }
-
-        ul {
-        padding-inline-start: 20px;
-        }
-        
-        pre {
-        margin: 0px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
-
+        <div class="main-part">
         <aside class="left-part">
-            <div class="avatar">
-            <img class="avatar" src="avatar.jpeg">
-            </div>
+            <section class="avatar">
+            <img class="ava" src="avatar.jpeg" alt="Avatar">
+            </section>
 
             <div class="name"><h1>Svitlana Ryashchenko</h1></div>
             <div class="position"><h4>Junior Frontend Developer</h4></div>
            
-            <div class="cv-item contacts">
+            <section class="cv-item contacts">
 
             <div class="adres">Address: Prague, Czech Republic</div>
             <div class="phone">Phone: <a href="tel:+420776526883">(+420)776 526 883</a></div>
-            <div class="email">E-mail: <a href = "mailto: siliel.ua@gmail.com">siliel.ua@gmail.com</a></div>
+            <div class="email">E-mail: <a href="mailto:siliel.ua@gmail.com">siliel.ua@gmail.com</a></div>
             <div class="telegram">Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></div>
-            </div>
+            </section>
 
         </aside>
 
-        <section class="right-part">
+        <div class="right-part">
             
 
-            <div class="cv-item about"><h3 class="item-title">About Myself</h3>   <hr>
+            <section class="cv-item about"><h3 class="item-title">About Myself</h3>   <hr>
              
             <p>I have financial education and started my acquaintance with programming with Harvard online course CS50. 
                 Sucsefully finished it with final project on Python and continued to learn this language. 
@@ -131,17 +40,17 @@
             
             <p>I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
                 punctual and assiduous. </p>
-            </div>
+            </section>
 
-            <div class="cv-item education">
+            <section class="cv-item education">
                 <h3 class="item-title">Education</h3>
                 <hr>
                 <p>Bachelor Management of Organizations <br>
                 Kyiv National Economic Univercity <br>
                 2000-2004</p>
-            </div>
+            </section>
 
-            <div class="cv-item skills">
+            <section class="cv-item skills">
             <h3 class="item-title">Skills and Proficiency</h3>
             <hr>
             <ul class="item-list">
@@ -153,9 +62,9 @@
             <li>Git</li>
             <li>Adobe Xd</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="cv-item courses">
+            <section class="cv-item courses">
                 <h3 class="item-title">Courses</h3>
                 <hr>
                 <ul class="item-list">
@@ -164,9 +73,9 @@
             <li>Udemy: The Complete Web Developer Course 2.0</li>
             <li>Udemy: The Python Mega Course: Build 10 Real World Applications</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="cv-item code"> 
+            <section class="cv-item code"> 
                 <h3 class="item-title">Code example</h3>
                 <hr>
 
@@ -188,12 +97,12 @@
                       return n;<br>
                     }<br>
                 }<br>
-            } nbYear(p0, percent, aug, p)<br>
+            } nbYear(p0, percent, aug, p)
 
             </pre>
-            </div>
+        </section>
 
-            <div class="cv-item languages">
+            <section class="cv-item languages">
                 <h3 class="item-title">Languages</h3>
                 <hr>
                 <ul class="item-list">
@@ -202,10 +111,23 @@
             <li>English - Upper-intermediate</li>
             <li>Czech  - Elementary</li>
                 </ul>
-            </div>
+            </section>
 
-        </section>
+        </div>
+    </div>
 
+    <footer>
+        <a class="github-icon" href="https://github.com/LanaRyashchenko">
+            <img src="github_icon.png" alt="Github Icon" width="28" height="28">
+            <p>My GitHub</p>
+          </a>
+          <p>2021</p>
+          <a href="https://rs.school/js/">
+            <img src="rs_school_js.svg" alt="Rsschool Icon" width="73" height="26">
+          </a>
+
+
+    </footer>
     </div>  
   </body>
 </html>
