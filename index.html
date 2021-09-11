@@ -3,10 +3,11 @@
   <head>
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
+  
   </head>
   <body>
     <div class="container">
-        <div class="main-part">
+        <main class="main-part">
         <aside class="left-part">
             <section class="avatar">
             <img class="ava" src="avatar.jpeg" alt="Avatar">
@@ -16,11 +17,12 @@
             <div class="position"><h4>Junior Frontend Developer</h4></div>
            
             <section class="cv-item contacts">
-
-            <div class="adres">Address: Prague, Czech Republic</div>
-            <div class="phone">Phone: <a href="tel:+420776526883">(+420)776 526 883</a></div>
-            <div class="email">E-mail: <a href="mailto:siliel.ua@gmail.com">siliel.ua@gmail.com</a></div>
-            <div class="telegram">Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></div>
+                <ul class="contacts"></ul>
+            <li>Address: Prague, Czech Republic</li>
+            <li>Phone: <a href="tel:+420776526883">(+420)776 526 883</a></li>
+            <li>E-mail: <a href="mailto:siliel.ua@gmail.com">siliel.ua@gmail.com</a></li>
+            <li>Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></li>
+            </ul>
             </section>
 
         </aside>
@@ -86,18 +88,18 @@
             
             <pre>
             function nbYear(p0, percent, aug, p) { <br>
-                var n = 1; <br>
-                for (var i = 0; p0 <= p; i++) {<br>
+                var counter = 1; <br>
+                for (var i = 0; p0 < p; i++) {<br>
                     var population = p0 + Math.floor(p0/100*percent) + aug;<br>
                     p0 = population;<br>
                 
-                    if (p0 <= p) {<br>
-                      n ++;<br>
+                    if (p0 < p) {<br>
+                      counter ++;<br>
                     } else {<br>
-                      return n;<br>
+                      return counter;<br>
                     }<br>
                 }<br>
-            } nbYear(p0, percent, aug, p)
+            } 
 
             </pre>
         </section>
@@ -114,7 +116,7 @@
             </section>
 
         </div>
-    </div>
+    </main>
 
     <footer>
         <a class="github-icon" href="https://github.com/LanaRyashchenko">
