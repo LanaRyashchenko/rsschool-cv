@@ -7,7 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
     }
 
     h1,h2,h3,h4 {
@@ -80,9 +79,10 @@ body {
         padding-top: 30px;
     }
   
-    .contacts div {
+    .contacts li {
         line-height: 2.0;
-        font-size: 0.8em;
+        font-size: 0.9em;
+        list-style-type: none;
     }
 
     .contacts a {
@@ -116,3 +116,5 @@ body {
     margin-right: 10px;
 }
 
+
+    
