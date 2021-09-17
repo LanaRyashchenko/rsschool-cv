@@ -3,7 +3,9 @@
   <head>
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
   </head>
   <body>
     <div class="container">
@@ -85,22 +87,22 @@
                 at the beginning of a year. The population regularly increases by percents (percent) per year 
                 and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does 
                 the town need to see its population greater or equal to (p) inhabitants?</p>
-            
-            <pre>
-            function nbYear(p0, percent, aug, p) { <br>
-                var counter = 1; <br>
-                for (var i = 0; p0 < p; i++) {<br>
-                    var population = p0 + Math.floor(p0/100*percent) + aug;<br>
-                    p0 = population;<br>
+        
+    <pre><code>
+    function nbYear(p0, percent, aug, p) { <br>
+        var counter = 1; <br>
+        for (var i = 0; p0 < p; i++) {<br>
+            var population = p0 + Math.floor(p0/100*percent) + aug;<br>
+            p0 = population;<br>
                 
-                    if (p0 < p) {<br>
-                      counter ++;<br>
-                    } else {<br>
-                      return counter;<br>
-                    }<br>
-                }<br>
-            } 
-
+            if (p0 < p) {<br>
+                counter ++;<br>
+            } else {<br>
+                return counter;<br>
+            }<br>
+        }<br>
+    } 
+        </code>
             </pre>
         </section>
 
