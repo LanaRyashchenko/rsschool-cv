@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+  </head>
+  <body>
+    <div class="container">
+        <main class="main-part">
+        <aside class="left-part">
+            <section class="avatar">
+            <img class="ava" src="avatar.jpeg" alt="Avatar">
+            </section>
+
+            <div class="name"><h1>Svitlana Ryashchenko</h1></div>
+            <div class="position"><h4>Junior Frontend Developer</h4></div>
+           
+            <section class="cv-item contacts">
+                <ul class="contacts"></ul>
+            <li>Address: Prague, Czech Republic</li>
+            <li>Phone: <a href="tel:+420776526883">(+420)776 526 883</a></li>
+            <li>E-mail: <a href="mailto:siliel.ua@gmail.com">siliel.ua@gmail.com</a></li>
+            <li>Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></li>
+            </ul>
+            </section>
+
+        </aside>
+
+        <div class="right-part">
+            
+
+            <section class="cv-item about"><h3 class="item-title">About Myself</h3>   <hr>
+             
+            <p>I have financial education and started my acquaintance with programming with Harvard online course CS50. 
+                Sucsefully finished it with final project on Python and continued to learn this language. 
+                I made second project on Python (Flask) - parcel traking for online shop. 
+                            Also I began learning Wordpress for my own needs and as a result I made some web-pages. 
+                While I was working on this, I faced the need to deepen my knowledge of CSS, 
+                as well as the need to start learning JS. I began to learn JS and how to write HTML code. 
+                I continue to grow and develop in learning JS.</p>
+            
+            <p>I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
+                punctual and assiduous. </p>
+            </section>
+
+            <section class="cv-item education">
+                <h3 class="item-title">Education</h3>
+                <hr>
+                <p>Bachelor Management of Organizations <br>
+                Kyiv National Economic Univercity <br>
+                2000-2004</p>
+            </section>
+
+            <section class="cv-item skills">
+            <h3 class="item-title">Skills and Proficiency</h3>
+            <hr>
+            <ul class="item-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Wordpress</li>
+            <li>Python (basic knowledge) - Flask, Django</li>
+            <li>JavaScript (basic knowledge)</li>
+            <li>Git</li>
+            <li>Adobe Xd</li>
+                </ul>
+            </section>
+
+            <section class="cv-item courses">
+                <h3 class="item-title">Courses</h3>
+                <hr>
+                <ul class="item-list">
+            <li>Harvard CS50</li>
+            <li>Udemy: Learn to Program in Javascript: Beginner to Pro</li>
+            <li>Udemy: The Complete Web Developer Course 2.0</li>
+            <li>Udemy: The Python Mega Course: Build 10 Real World Applications</li>
+                </ul>
+            </section>
+
+            <section class="cv-item code"> 
+                <h3 class="item-title">Code example</h3>
+                <hr>
+
+            <p class="code-description">KATA from CODEWARS: In a small town there is the population (p0) 
+                at the beginning of a year. The population regularly increases by percents (percent) per year 
+                and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does 
+                the town need to see its population greater or equal to (p) inhabitants?</p>
+        
+    <pre>
+    function nbYear(p0, percent, aug, p) { <br>
+        var counter = 1; <br>
+        for (var i = 0; p0 < p; i++) {<br>
+            var population = p0 + 
+            Math.floor(p0/100*percent) + aug;<br>
+            p0 = population;<br>
+                
+            if (p0 < p) {<br>
+                counter ++;<br>
+            } else {<br>
+                return counter;<br>
+            }<br>
+        }<br>
+    } 
+        
+            </pre>
+        </section>
+
+            <section class="cv-item languages">
+                <h3 class="item-title">Languages</h3>
+                <hr>
+                <ul class="item-list">
+            <li>Russian - Native</li>
+            <li>Ukrainian - Native</li>
+            <li>English - Upper-intermediate</li>
+            <li>Czech  - Elementary</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <a class="github-icon" href="https://github.com/LanaRyashchenko">
+            <img src="github_icon.png" alt="Github Icon" width="28" height="28">
+            <p>My GitHub</p>
+          </a>
+          <p>2021</p>
+          <a href="https://rs.school/js/">
+            <img src="rs_school_js.svg" alt="Rsschool Icon" width="73" height="26">
+          </a>
+
+
+    </footer>
+    </div>  
+  </body>
+</html>
