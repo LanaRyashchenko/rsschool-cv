@@ -1,1 +1,2 @@
-<https://LanaRyashchenko.github.io/rsschool-cv/cv>
+<https://lanaryashchenko.github.io/rsschool-cv/>
+
