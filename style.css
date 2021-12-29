@@ -2,13 +2,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
 }
+
+html { font-size: 16px; }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+
+    
     }
+
 
     h1,h2,h3,h4 {
     text-transform: uppercase;
@@ -18,9 +21,10 @@ body {
 
     .container {
         padding: 30px;
-        margin: 20px auto;
-        width: 1024px;
+        margin: 20px;
         box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%);
+        max-width: 1024px;
+        justify-content: center;
     }
 
     header {
@@ -58,40 +62,38 @@ body {
     }
     .main-part {
         display: flex;
-        flex-direction: row;
+        max-width: 1024px;
         justify-content: center;
         align-self: center;
         margin-left: auto;
         margin-right: auto;
     }
     .left-part {
-        display: flex;
-        flex: 23%;
-        flex-direction: column;
+        width: 30%;
         background-color: #FAEBD7;
-        padding: 10px;
-        padding-top: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .left-part h1{
-        text-align: center;
-    }
-    .avatar {
-        text-align: center;
-    }
-
-    .right-part {
-        display: flex;
-        flex-direction: column;
-        flex: 77%;
         padding: 10px;
         padding-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
-        
+        text-align: center;
+        align-content: center;
+        margin: 0 auto;
     }
+
+    .name h1 {
+        justify-content: center;
+    }
+
+    .right-part {
+       width: 70%;
+        padding: 10px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+   
+    }
+  
 
     .top {
         position: fixed;
@@ -115,7 +117,7 @@ body {
 
     .ava {
     max-width:70%;
-    border-radius: 100px; 
+    border-radius: 50%; 
     }
     
     .cv-item {
@@ -136,9 +138,10 @@ body {
         padding-top: 30px;
     }
   
-    .contacts div {
+    .contacts li {
         line-height: 2.0;
-        font-size: 0.8em;
+        list-style-type: none;
+        text-align: left;
     }
 
     .contacts a {
@@ -172,3 +175,51 @@ body {
     margin-right: 10px;
 }
 
+
+@media (min-width: 576px) and (max-width: 860px) {
+    html {
+        font-size: 90%;
+    }
+
+        h1 {
+            font-size: 1em;
+    }
+    h4 {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    html {
+        font-size: 80%;
+    }
+
+    .main-part {
+        flex-direction: column;
+        
+        
+    }
+    .left-part, .right-part {
+        width: 100%;
+        background-color: #FAEBD7;
+        padding: 10px;
+       
+    }
+    .ava {
+        max-width: 50%;
+
+    }
+    .container {
+        padding: 10px;
+      
+        box-shadow: none;
+    }
+
+    pre {
+      font-size: 80%;
+    }
+}
+    

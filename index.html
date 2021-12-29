@@ -3,6 +3,9 @@
   <head>
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
   </head>
   <body>
     <div class="container" id="top">
@@ -18,6 +21,7 @@
                 </ul>
             </nav>
         </header>
+    <div class="container">
         <main class="main-part">
         <aside class="left-part">
             <section class="avatar">
@@ -28,11 +32,12 @@
             <div class="position"><h4>Junior Frontend Developer</h4></div>
            
             <section class="cv-item contacts">
-
-            <div class="adres">Address: Prague, Czech Republic</div>
-            <div class="phone">Phone: <a href="tel:+420776526883">(+420)776 526 883</a></div>
-            <div class="email">E-mail: <a href="mailto:siliel.ua@gmail.com">siliel.ua@gmail.com</a></div>
-            <div class="telegram">Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></div>
+                <ul class="contacts"></ul>
+            <li>Address: Prague, Czech Republic</li>
+            <li>Phone: <a href="tel:+420776526883">(+420)776 526 883</a></li>
+            <li>E-mail: <a href="mailto:siliel.ua@gmail.com">siliel.ua@gmail.com</a></li>
+            <li>Telegram: <a href="https://telegram.me/lana_ryashchenko">@lana_ryashchenko</a></li>
+            </ul>
             </section>
 
         </aside>
@@ -97,22 +102,23 @@
                 at the beginning of a year. The population regularly increases by percents (percent) per year 
                 and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does 
                 the town need to see its population greater or equal to (p) inhabitants?</p>
-            
-            <pre>
-            function nbYear(p0, percent, aug, p) { <br>
-                var n = 1; <br>
-                for (var i = 0; p0 <= p; i++) {<br>
-                    var population = p0 + Math.floor(p0/100*percent) + aug;<br>
-                    p0 = population;<br>
+        
+    <pre>
+    function nbYear(p0, percent, aug, p) { <br>
+        var counter = 1; <br>
+        for (var i = 0; p0 < p; i++) {<br>
+            var population = p0 + 
+            Math.floor(p0/100*percent) + aug;<br>
+            p0 = population;<br>
                 
-                    if (p0 <= p) {<br>
-                      n ++;<br>
-                    } else {<br>
-                      return n;<br>
-                    }<br>
-                }<br>
-            } nbYear(p0, percent, aug, p)
-
+            if (p0 < p) {<br>
+                counter ++;<br>
+            } else {<br>
+                return counter;<br>
+            }<br>
+        }<br>
+    } 
+        
             </pre>
         </section>
 
@@ -128,7 +134,7 @@
             </section>
 
         </div>
-    </div>
+    </main>
 
     <footer>
         <a class="github-icon" href="https://github.com/LanaRyashchenko">
