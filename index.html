@@ -6,7 +6,24 @@
   </head>
   <body>
     <div class="container">
-        <div class="main-part">
+        <header>
+            <nav class="menu">
+                <div class="humburger">
+                    <div class="burger-line line-1"></div>
+                    <div class="burger-line line-2"></div>
+                    <div class="burger-line line-3"></div>
+                </div>
+                <ul class="humburger-menu__list">
+                    <li><a class="top-menu__link link" href="#about">About myself</a></li>
+                    <li><a class="top-menu__link link" href="#education">Education</a></li>
+                    <li><a class="top-menu__link link" href="#skills">Skills and proficiency</a></li>
+                    <li><a class="top-menu__link link" href="#courses">Courses</a></li>
+                    <li><a class="top-menu__link link" href="#code">Code example</a></li>
+                    <li><a class="top-menu__link link" href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-part">
         <aside class="left-part">
             <section class="avatar">
             <img class="ava" src="avatar.jpeg" alt="Avatar">
@@ -28,7 +45,7 @@
         <div class="right-part">
             
 
-            <section class="cv-item about"><h3 class="item-title">About Myself</h3>   <hr>
+            <section class="cv-item about" name="about"><h3 class="item-title">About Myself</h3>   <hr>
              
             <p>I have financial education and started my acquaintance with programming with Harvard online course CS50. 
                 Sucsefully finished it with final project on Python and continued to learn this language. 
@@ -42,7 +59,7 @@
                 punctual and assiduous. </p>
             </section>
 
-            <section class="cv-item education">
+            <section class="cv-item education" name="education">
                 <h3 class="item-title">Education</h3>
                 <hr>
                 <p>Bachelor Management of Organizations <br>
