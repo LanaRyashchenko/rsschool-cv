@@ -26,10 +26,47 @@ body {
         max-width: 1024px;
         justify-content: center;
     }
+
+    header {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .humburger-menu__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 0px;
+        padding: 10px 20px;
+        
+    }
+
+    .top-menu__link {
+        text-decoration: none;
+        color: inherit;
+        font-size: 0.9em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .top-menu__link:hover {
+        text-decoration: underline;
+        color: #FAEBD7;
+    }
+    .burger-line {
+        display: none;
+        width: 20px;
+        height: 2px;
+        background: black;
+        transition: all 0.8s;
+    }
     .main-part {
         display: flex;
         max-width: 1024px;
         justify-content: center;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .left-part {
         width: 30%;
@@ -57,6 +94,26 @@ body {
    
     }
   
+
+    .top {
+        position: fixed;
+        top: 90%;
+        right: 15%;
+        background-color: #FAEBD7;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+    .top:hover {
+        text-decoration: underline;
+    }
 
     .ava {
     max-width:70%;
