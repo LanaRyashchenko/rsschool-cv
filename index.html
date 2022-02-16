@@ -12,7 +12,7 @@
         <header>
             <nav class="menu">
                 <ul class="humburger-menu__list">
-                    <li><a class="top-menu__link link" href="#about">About myself</a></li>
+                    <li><a class="top-menu__link link" href="#about">About</a></li>
                     <li><a class="top-menu__link link" href="#education">Education</a></li>
                     <li><a class="top-menu__link link" href="#skills">Skills and proficiency</a></li>
                     <li><a class="top-menu__link link" href="#courses">Courses</a></li>
@@ -21,14 +21,18 @@
                 </ul>
             </nav>
         </header>
+        <article class="person">
+            <h1 class="name">Svitlana Ryashchenko</h1>
+             <h4 class="position">Junior Frontend Developer</h4>
+         </article>
         <main class="main-part">
+        
         <aside class="left-part">
             <div class="avatar">
             <img class="ava" src="avatar.jpeg" alt="Avatar">
             </div>
 
-            <div class="name"><h1>Svitlana Ryashchenko</h1></div>
-            <div class="position"><h4>Junior Frontend Developer</h4></div>
+          
            
             <div class="cv-item contacts">
                 <ul class="contacts">
@@ -46,39 +50,42 @@
                 <button class="top">TOP</button>
                </form>
 
-            <section class="cv-item about" id="about"><h3 class="item-title">About Myself</h3>   <hr>
-             
-            <p>I have financial education and started my acquaintance with programming with Harvard online course CS50. 
+            <section class="about" id="about"> <hr>
+             <div class="item-info">
+            I have financial education and started my acquaintance with programming with Harvard online course CS50. 
                 Sucsefully finished it with final project on Python and continued to learn this language. 
                 I made second project on Python (Flask) - parcel traking for online shop. 
                             Also I began learning Wordpress for my own needs and as a result I made some web-pages. 
                 While I was working on this, I faced the need to deepen my knowledge of CSS, 
                 as well as the need to start learning JS. I began to learn JS and how to write HTML code. 
-                I continue to grow and develop in learning JS.</p>
+                I continue to grow and develop in learning JS.
             
-            <p>I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
-                punctual and assiduous. </p>
+            I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
+                punctual and assiduous.
+            </div>
             </section>
 
             <section class="cv-item education" id="education">
                 <h3 class="item-title">Education</h3>
-                <hr>
-                <p>Bachelor Management of Organizations <br>
-                Kyiv National Economic Univercity <br>
-                2000-2004</p>
+                <div class="item-info">
+                Management of Organizations <br>
+                Kyiv National Economic University <br>
+                2000-2004
+                </div>
             </section>
 
             <section class="cv-item skills" id="skills">
             <h3 class="item-title">Skills and Proficiency</h3>
             <hr>
             <ul class="item-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Wordpress</li>
-            <li>Python (basic knowledge) - Flask, Django</li>
-            <li>JavaScript (basic knowledge)</li>
-            <li>Git</li>
-            <li>Adobe Xd</li>
+            <li class="skill-item"><div class="fff">HTML</div><div class="percent"><div class="percent-skills" style="width: 85%;"></div></div></li>
+            <li class="skill-item"><div class="fff">CSS</div><div class="percent"><div class="percent-skills" style="width: 85%;"></div></div></li>
+            <li class="skill-item"><div class="fff">Javascript</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
+            <li class="skill-item"><div class="fff">Wordpress</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="fff">Git</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="fff">Adobe Xd</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="fff">Figma</div><div class="percent"><div class="percent-skills" style="width: 75%;"></div></div></li>
+            <li class="skill-item"><div class="fff">Python</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
                 </ul>
             </section>
 
@@ -137,12 +144,12 @@
 
     <footer>
         <a class="github-icon" href="https://github.com/LanaRyashchenko">
-            <img src="github_icon.png" alt="Github Icon" width="28" height="28">
+            <img src="Octocat.png" alt="Github Icon" width="28" height="28">
             <p>My GitHub</p>
           </a>
-          <p>2021</p>
-          <a href="https://rs.school/js/">
-            <img src="rs_school_js.svg" alt="Rsschool Icon" width="73" height="26">
+          <p class="year">2021</p>
+          <a class="rsschool" href="https://rs.school/js/">
+            <img class="ttt" src="rss.svg" alt="Rsschool Icon" width="73" height="26">
           </a>
 
 
