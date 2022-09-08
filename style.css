@@ -258,8 +258,8 @@ body {
         color: var(--font-black)
     }
 
-    pre {
-    margin-top: 30px;
+    .code-description {
+    margin-bottom: 10px;
     }
 
     footer {
@@ -328,7 +328,6 @@ body {
 code {
     font-size: var(--font14);
    
-}
 }
 @media (max-width: 768px)  {
     html {
