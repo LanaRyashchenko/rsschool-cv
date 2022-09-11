@@ -216,7 +216,7 @@ body {
         border: 2px solid var(--bg-gold);
     }
 
-.fff {
+.skill_title {
     width: 20%;
 }
 .percent-skills {
@@ -292,13 +292,16 @@ position: relative;
         bottom: 0px;
         z-index: 1;
         text-align: center;
-        color: #ffffff;
-        font-size: var(--font18);
         padding-top: 25%;
     }
 
     .project_card:hover > .project_cover {
         display: block;
+    }
+
+    .project_link {
+        color: var(--font-white);
+        font-size: var(--font18);
     }
 
     footer {
