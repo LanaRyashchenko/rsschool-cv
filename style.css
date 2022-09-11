@@ -471,9 +471,6 @@ code {
         flex-direction: column;
     }
 
-    .project_card {
-        pointer-events: none;
-    }
     .left-part {
         width: 100%;
         border-radius: 0px;
