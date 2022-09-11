@@ -102,8 +102,11 @@ body {
     .humburger-menu__list {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 20px;
+        flex-wrap: wrap;
+        gap: 30px;
+
     }
 
 /* Main */ 
@@ -176,7 +179,7 @@ body {
     .right-part {
        width: 70%;
     
-      margin-left: 20px;
+      padding: 0px 0px 0px 20px;
     }
   
     .item-title {
@@ -265,16 +268,20 @@ body {
 
     .project_list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 20px;
+        gap: 10px;
     }
 
     .project_card {
+        flex-shrink: 1;
+        max-height: 185px;
+        width: auto;
 cursor: pointer;
 overflow: hidden;
 position: relative;
     }
-    .project_cover {
+    .project_cover  {
         display: none;
         background-color: var(--bg-gold);
         opacity: 90%;
@@ -327,7 +334,7 @@ position: relative;
 
 @media (max-width: 1024px)  {
     .top-menu__link {
-        font-size: var(--font12);
+        font-size: var(--font16);
     }
 
     .name {
@@ -370,6 +377,7 @@ code {
         right: 0;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+        z-index: 20;
     }
 
 
@@ -434,43 +442,60 @@ code {
     }
 
     .top-menu__link {
-        font-size: var(--font20);
+        font-size: var(--font18);
     }
 
     .person {
         margin-top: 80px;
         padding-top: 30px;
     }
-
 }
-@media (max-width: 576) {
-    html {
-        font-size: 80%;
+
+@media (max-width: 768px)  {
+
+    .container {
+        padding: 0px;
+    }
+    .ava {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        z-index: 50;
+        width: 60px;
+        height: auto;
+        margin: 10px 0px;
     }
 
     .main-part {
         flex-direction: column;
-        
-        
     }
-    .left-part, .right-part {
+
+    .project_card {
+        pointer-events: none;
+    }
+    .left-part {
         width: 100%;
-        background-color: #FAEBD7;
-        padding: 10px;
-       
-    }
-    .ava {
-        max-width: 50%;
-
-    }
-    .container {
-        padding: 10px;
-      
-        box-shadow: none;
+        border-radius: 0px;
     }
 
-    pre {
-      font-size: 80%;
+    .contacts {
+        text-align: center;
+    }
+
+    .right-part {
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+    }
+
+    footer {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     }
 }
-    
+
+@media (max-width: 768px)  {
+    .project_list {
+       flex-wrap: wrap;
+    }
+}
