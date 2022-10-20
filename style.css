@@ -243,7 +243,7 @@ body {
     .top_button {
         position: fixed;
         top: 90%;
-        right: 15%;
+        right: 5%;
         background-color: var(--bg-gold);
     border: none;
     padding: 20px;
@@ -492,10 +492,15 @@ code {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     }
-}
 
-@media (max-width: 768px)  {
     .project_list {
        flex-wrap: wrap;
     }
+    .cv-item:before {
+        display: block;
+        content: "";
+        height: 90px;
+        margin: -90px 0 0;
+    }
 }
+
