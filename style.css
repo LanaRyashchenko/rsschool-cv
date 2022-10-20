@@ -368,6 +368,7 @@ code {
     font-size: var(--font14);
    
 }
+}
 @media (max-width: 768px)  {
     html {
         font-size: 90%;
@@ -503,4 +504,3 @@ code {
         margin: -90px 0 0;
     }
 }
-
