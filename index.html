@@ -8,7 +8,7 @@
    
   </head>
   <body>
-    <div class="container" id="top">
+    <div class="container">
         <header>
             <nav class="menu">
                 <div class="burger">
@@ -30,7 +30,7 @@
         </header>
         <article class="person">
             <h1 class="name">Svitlana Ryashchenko</h1>
-             <h4 class="position">Junior Frontend Developer</h4>
+             <h2 class="position">Junior Frontend Developer</h2>
          </article>
         <main class="main-part">
         
@@ -40,7 +40,6 @@
             </div>
 
           
-           
             <div class="cv-item contacts">
                 <ul class="contacts">
             <li>Address: Prague, Czech Republic</li>
@@ -57,16 +56,12 @@
                
 
              <div class="item-info about" id="about"><p>
-            I have financial education and started my acquaintance with programming with Harvard online course CS50. 
-                Sucsefully finished it with final project on Python and continued to learn this language. 
-                I made second project on Python (Flask) - parcel traking for online shop. 
-                            Also I began learning Wordpress for my own needs and as a result I made some web-pages. 
-                While I was working on this, I faced the need to deepen my knowledge of CSS, 
-                as well as the need to start learning JS. I began to learn JS and how to write HTML code. 
-                I continue to grow and develop in learning JS.
+            I started my acquaintance with programming from Harvard online course CS50. 
+            Successfully finished it with final project I created a second one: parcel traking for online shop (on Python). 
+                Also I began learning Wordpress for my own needs and as a result I created some web-pages. 
+                But I faced the need to deepen my knowledge of HTML and CSS, and started learning JS. And now I continue to grow and develop in learning JS.
             
-            I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
-                punctual and assiduous.
+        I'm an enthusiastic and detail-oriented developer with a high level of self-organization. Fast learner and focused on problem solving.
             </p>   </div>
 
             <section class="cv-item education" id="education">
@@ -141,28 +136,19 @@
                 <h3 class="item-title">Code example</h3>
                 <hr>
 
-            <p class="code-description">KATA from CODEWARS: In a small town there is the population (p0) 
-                at the beginning of a year. The population regularly increases by percents (percent) per year 
-                and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does 
-                the town need to see its population greater or equal to (p) inhabitants?</p>
+            <p class="code-description">KATA from CODEWARS: The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.</p>
     
     <code>
-    function nbYear(p0, percent, aug, p) { <br>
-        var counter = 1; <br>
-        for (var i = 0; p0 &lt; p; i++) { <br>
-            var population = p0 + 
-            Math.floor(p0/100*percent) + aug;<br>
-            p0 = population;<br>
-                
-            if (p0 &lt; p) {<br>
-                counter ++;<br>
-            } else {<br>
-                return counter;<br>
-            }<br>
-        }<br>
-    } 
-        
-            </code>
+function duplicateEncode(word){ <br>
+    return word <br>
+    .toLowerCase() <br>
+    .split('') <br>
+    .map( function (a, i, w) { <br>
+        return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')' <br>
+            }) <br>
+            .join(''); <br>
+    } <br>
+    </code>
         </section>
 
            
