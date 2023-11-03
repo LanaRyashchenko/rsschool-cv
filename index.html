@@ -141,7 +141,7 @@
     
     <code>
         function fib(num) { <br>
-            if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) { <br>
+            if (typeof(num) !== 'number' || num &lt;= 0 || !Number.isInteger(num)) { <br>
                 return ""; <br>
             }<br>
         
@@ -149,7 +149,7 @@
             let first = 0;<br>
             let second = 1;<br>
         
-            for (let i = 0; i < num; i++) {<br>
+            for (let i = 0; i &lt;num; i++) {<br>
                 if (i + 1 === num) {<br>
                     result += `${first}`;<br>
                 } else {<br>
