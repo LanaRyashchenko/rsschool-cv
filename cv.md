@@ -13,21 +13,23 @@
 
 ## About Myself
 
-I have financial education and started my acquaintance with programming with Harvard online course CS50. Sucsefully finished it with final project on Python and continued to learn this language. I made second project on Python (Flask) - parcel traking for online shop. Also I began learning Wordpress for my own needs and as a result I made some web-pages. While I was working on this, I faced the need to deepen my knowledge of CSS, as well as the need to start learning JS. I began to learn JS and how to write HTML code. I continue to grow and develop in learning JS.
+I have financial education and for a long period of time I worked in insurance company. On maternity leave I started my acquaintance with programming with Harvard online course CS50. Sucsessfully finished it with final project on Python I continued to learn this language. Also I began learning Wordpress for my own needs. But it wasn't as interesting as writing code so I finished some course on Udemy to try some new things. This way diside to deepen my knowledge in JS.
 
-I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, punctual and assiduous.
+Being an active, curious person I like challenging tasks and aimed at solving problems. 
+I am persistent and purposeful with high level of self-organization. 
 
 ***
 
 ## Skills and Proficiency
 
-* HTML
-* CSS
+* HTML5
+* CSS, SASS/SCSS
 * Wordpress
-* Python (basic knowledge) - Flask, Django
-* JavaScript (basic knowledge)
-* Git
-* Adobe Xd
+* Python (Fundamentals) 
+* JavaScript (Fundamentals)
+* Git/GitHub
+* Adobe Xd, Figma
+* VS Code
 
 ***
 
@@ -42,23 +44,31 @@ I have a high level of self-organization, aimed at solving problems. I am persis
 
 ## Code example
 
-KATA from CODEWARS: In a small town there is the population (p0) at the beginning of a year. The population regularly increases by percents (percent) per year and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does the town need to see its population greater or equal to (p) inhabitants?
+The Fibonacci sequence:
 
 ```javascript
-function nbYear(p0, percent, aug, p) {
-    var n = 1;
-    for (var i = 0; p0 <= p; i++) {
-        var population = p0 + Math.floor(p0/100*percent) + aug;
-        p0 = population;
-
-        if (p0 <= p) {
-          n ++;
-        } else {
-          return n;
+function fib(num) {
+        if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+            return "";
         }
+    
+        let result = '';
+        let first = 0;
+        let second = 1;
+    
+        for (let i = 0; i < num; i++) {
+            if (i + 1 === num) {
+                result += `${first}`;
+            } else {
+                result += `${first} `;
+            }
+            let third = first + second;
+            first = second;
+            second = third;
+        }
+        return result;
     }
-} nbYear(p0, percent, aug, p)
-
+      
 ```
 
 ***
