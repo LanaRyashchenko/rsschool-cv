@@ -4,8 +4,6 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   
   </head>
   <body>
     <div class="container">
@@ -56,12 +54,15 @@
                
 
              <div class="item-info about" id="about"><p>
-            I started my acquaintance with programming from Harvard online course CS50. 
-            Successfully finished it with final project I created a second one: parcel traking for online shop (on Python). 
-                Also I began learning Wordpress for my own needs and as a result I created some web-pages. 
-                But I faced the need to deepen my knowledge of HTML and CSS, and started learning JS. And now I continue to grow and develop in learning JS.
+                I have financial education and for a long period of time I worked in insurance company. 
+                On maternity leave I started my acquaintance with programming with Harvard online course CS50. 
+                Sucsessfully finished it with final project on Python I continued to learn this language. 
+                Also I began learning Wordpress for my own needs. But it wasn't as interesting as writing code so I finished some courses on Udemy to try some new things. 
+                This way I dicided to deepen my knowledge in JS.
+
+                Being an active, curious person I like challenging tasks and aimed at solving problems. 
+                I am purposeful and detail-oriented developer with a high level of self-organization. 
             
-        I'm an enthusiastic and detail-oriented developer with a high level of self-organization. Fast learner and focused on problem solving.
             </p>   </div>
 
             <section class="cv-item education" id="education">
@@ -77,11 +78,11 @@
             <h3 class="item-title">Skills and Proficiency</h3>
             <hr>
             <ul class="item-list">
-            <li class="skill-item"><div class="skill_title">HTML</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
-            <li class="skill-item"><div class="skill_title">CSS</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">HTML5</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">CSS, SASS/SCSS</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
             <li class="skill-item"><div class="skill_title">Javascript</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
             <li class="skill-item"><div class="skill_title">Wordpress</div><div class="percent"><div class="percent-skills" style="width: 50%;"></div></div></li>
-            <li class="skill-item"><div class="skill_title">Git</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Git/GitHub</div><div class="percent"><div class="percent-skills" style="width: 40%;"></div></div></li>
             <li class="skill-item"><div class="skill_title">Adobe Xd</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
             <li class="skill-item"><div class="skill_title">Figma</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
             <li class="skill-item"><div class="skill_title">Python</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
@@ -136,18 +137,30 @@
                 <h3 class="item-title">Code example</h3>
                 <hr>
 
-            <p class="code-description">KATA from CODEWARS: The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.</p>
+            <p class="code-description">The Fibonacci sequence:</p>
     
     <code>
-function duplicateEncode(word){ <br>
-    return word <br>
-    .toLowerCase() <br>
-    .split('') <br>
-    .map( function (a, i, w) { <br>
-        return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')' <br>
-            }) <br>
-            .join(''); <br>
-    } <br>
+        function fib(num) { <br>
+            if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) { <br>
+                return ""; <br>
+            }<br>
+        
+            let result = ''; <br>
+            let first = 0;<br>
+            let second = 1;<br>
+        
+            for (let i = 0; i < num; i++) {<br>
+                if (i + 1 === num) {<br>
+                    result += `${first}`;<br>
+                } else {<br>
+                    result += `${first} `;<br>
+                }<br>
+                let third = first + second;<br>
+                first = second;<br>
+                second = third;<br>
+            }<br>
+            return result;<br>
+        }
     </code>
         </section>
 
@@ -161,7 +174,7 @@ function duplicateEncode(word){ <br>
             <img src="Octocat.png" alt="Github Icon" width="28" height="28">
             <p>My GitHub</p>
           </a>
-          <p class="year">2022</p>
+          <p class="year">2023</p>
           <!--  <a class="rsschool" href="https://rs.school/js/">
             <img class="ttt" src="rss.svg" alt="Rsschool Icon" width="73" height="26">
           </a> -->

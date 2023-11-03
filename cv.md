@@ -13,8 +13,7 @@
 
 ## About Myself
 
-I have financial education and for a long period of time I worked in insurance company. On maternity leave I started my acquaintance with programming with Harvard online course CS50. Sucsessfully finished it with final project on Python I continued to learn this language. Also I began learning Wordpress for my own needs. But it wasn't as interesting as writing code so I finished some course on Udemy to try some new things. This way diside to deepen my knowledge in JS.
-
+I have financial education and for a long period of time I worked in insurance company. On maternity leave I started my acquaintance with programming with Harvard online course CS50. Sucsessfully finished it with final project on Python I continued to learn this language. Also I began learning Wordpress for my own needs. But it wasn't as interesting as writing code so I finished some courses on Udemy to try some new things. This way I dicided to deepen my knowledge in JS.
 Being an active, curious person I like challenging tasks and aimed at solving problems. 
 I am persistent and purposeful with high level of self-organization. 
 
