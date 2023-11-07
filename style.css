@@ -76,9 +76,9 @@ body {
         background-color: var(--bg-gold);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-       
     }
 
+  
     .top-menu__link {
         text-decoration: none;
         color: var(--font-white);
@@ -91,6 +91,7 @@ body {
         color: var(--font-black);
     transition: color 0.5s;
     }
+
     .burger-line {
         display: none;
         width: 20px;
@@ -101,9 +102,11 @@ body {
     .humburger-menu__list {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 20px;
-        
+        flex-wrap: wrap;
+        gap: 30px;
+
     }
 
 /* Main */ 
@@ -176,7 +179,7 @@ body {
     .right-part {
        width: 70%;
     
-      margin-left: 20px;
+      padding: 0px 0px 0px 20px;
     }
   
     .item-title {
@@ -213,7 +216,7 @@ body {
         border: 2px solid var(--bg-gold);
     }
 
-.fff {
+.skill_title {
     width: 20%;
 }
 .percent-skills {
@@ -237,10 +240,10 @@ body {
     }
     
    
-    .top {
+    .top_button {
         position: fixed;
         top: 90%;
-        right: 15%;
+        right: 5%;
         background-color: var(--bg-gold);
     border: none;
     padding: 20px;
@@ -254,12 +257,51 @@ body {
     color: var(--font-white)
     }
 
-    .top:hover {
+    .top_button:hover {
         color: var(--font-black)
     }
 
-    pre {
-    margin-top: 30px;
+   
+    .code-description {
+    margin-bottom: 10px;
+    }
+
+    .project_list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .project_card {
+        flex-shrink: 1;
+        max-height: 185px;
+        width: auto;
+cursor: pointer;
+overflow: hidden;
+position: relative;
+    }
+    .project_cover  {
+        display: none;
+        background-color: var(--bg-gold);
+        opacity: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        z-index: 1;
+        text-align: center;
+        padding-top: 25%;
+    }
+
+    .project_card:hover > .project_cover {
+        display: block;
+    }
+
+    .project_link {
+        color: var(--font-white);
+        font-size: var(--font18);
     }
 
     footer {
@@ -293,12 +335,9 @@ body {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(53deg) brightness(106%) contrast(101%);
 }
 
-.burger {
-
-}
 @media (max-width: 1024px)  {
     .top-menu__link {
-        font-size: var(--font12);
+        font-size: var(--font16);
     }
 
     .name {
@@ -309,31 +348,33 @@ body {
         font-size: var(--font18);
     }
 
-    .item-info {
-        font-size: var(--font14);
-    }
     .item-title {
         font-size: var(--font18);
-}
-.contacts {
-    font-size: var(--font14);
-}
+    }
+    .code-description  {
+        font-size: var(--font18);
+    }
 
-.item-list {
-    font-size: var(--font14);
-}
-.code-description {
-    font-size: var(--font14);
-}
-code {
+    code {
     font-size: var(--font14);
    
-}
-}
+    }
+    }
 @media (max-width: 768px)  {
     html {
         font-size: 90%;
     }
+
+    header {
+        min-height: 80px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        z-index: 20;
+    }
+
 
         h1 {
             font-size: 1em;
@@ -345,35 +386,120 @@ code {
     h3 {
         font-size: 0.9em;
     }
+    .menu {
+        position: relative;
+    }
+    .burger {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .humburger-menu__list {
+        display: none;
+    }
+    .line {
+        height: 5px;
+        width: 100%;
+        background: #ffffff;
+        transition: all 0.8s;
+    }
+
+    .menu_open .humburger-menu__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    transition: top 1s;
+    }
+
+    .menu_open .line-1 {
+        transform: rotate(-405deg) translate(-10px, 0px);
+        width: 40px;
+    }
+
+    .menu_open .line-2 {
+        opacity: 0%;
+    }
+
+    .menu_open .line-3 {
+        transform: rotate(405deg) translate(-20px, -8px);
+        width: 40px;
+    }
+
+    .humburger-menu__item {
+        margin-bottom: 20px;
+    }
+
+    .top-menu__link {
+        font-size: var(--font18);
+    }
+
+    .person {
+        margin-top: 80px;
+        padding-top: 30px;
+    }
 }
-@media (max-width: 576) {
-    html {
-        font-size: 80%;
+
+@media (max-width: 768px)  {
+
+    .container {
+        padding: 0px;
+    }
+    .ava {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        z-index: 50;
+        width: 60px;
+        height: auto;
+        margin: 10px 0px;
     }
 
     .main-part {
         flex-direction: column;
-        
-        
     }
-    .left-part, .right-part {
+
+    .left-part {
         width: 100%;
-        background-color: #FAEBD7;
-        padding: 10px;
-       
-    }
-    .ava {
-        max-width: 50%;
-
-    }
-    .container {
-        padding: 10px;
-      
-        box-shadow: none;
+        border-radius: 0px;
     }
 
-    pre {
-      font-size: 80%;
+    .contacts {
+        text-align: center;
     }
+
+    .right-part {
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+    }
+
+    footer {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    }
+
+    .project_list {
+       flex-wrap: wrap;
+    }
+    .cv-item:before {
+        display: block;
+        content: "";
+        height: 90px;
+        margin: -90px 0 0;
+    }
+
+    .item-info:before {
+        display: block;
+        content: "";
+        height: 90px;
+        margin: -90px 0 0;
+    }
+
 }
-    
