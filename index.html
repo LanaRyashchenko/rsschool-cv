@@ -4,11 +4,9 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   
   </head>
   <body>
-    <div class="container" id="top">
+    <div class="container">
         <header>
             <nav class="menu">
                 <div class="burger">
@@ -17,18 +15,20 @@
                     <div class="line line-3"></div>
                 </div>
                 <ul class="humburger-menu__list">
-                    <li><a class="top-menu__link link" href="#about">About</a></li>
-                    <li><a class="top-menu__link link" href="#education">Education</a></li>
-                    <li><a class="top-menu__link link" href="#skills">Skills and proficiency</a></li>
-                    <li><a class="top-menu__link link" href="#courses">Courses</a></li>
-                    <li><a class="top-menu__link link" href="#code">Code example</a></li>
-                    <li><a class="top-menu__link link" href="#languages">Languages</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#about">About</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#education">Education</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#skills">Skills and proficiency</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#languages">Languages</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#courses">Courses</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#languages">Projects</a></li>
+                    <li class="humburger-menu__item"><a class="top-menu__link link" href="#code">Code example</a></li>
+
                 </ul>
             </nav>
         </header>
         <article class="person">
             <h1 class="name">Svitlana Ryashchenko</h1>
-             <h4 class="position">Junior Frontend Developer</h4>
+             <h2 class="position">Junior Frontend Developer</h2>
          </article>
         <main class="main-part">
         
@@ -38,7 +38,6 @@
             </div>
 
           
-           
             <div class="cv-item contacts">
                 <ul class="contacts">
             <li>Address: Prague, Czech Republic</li>
@@ -50,86 +49,45 @@
 
         </aside>
 
-        <div class="right-part">
-                <button class="top" action="#top">TOP</button>
+        <div class="right-part" id="right">
+                <a href="" class="top_button">TOP</a>
+               
 
-            <section class="about" id="about"> <hr>
-             <p class="item-info">
-            I have financial education and started my acquaintance with programming with Harvard online course CS50. 
-                Sucsefully finished it with final project on Python and continued to learn this language. 
-                I made second project on Python (Flask) - parcel traking for online shop. 
-                            Also I began learning Wordpress for my own needs and as a result I made some web-pages. 
-                While I was working on this, I faced the need to deepen my knowledge of CSS, 
-                as well as the need to start learning JS. I began to learn JS and how to write HTML code. 
-                I continue to grow and develop in learning JS.
+             <div class="item-info about" id="about"><p>
+                I have financial education and for a long period of time I worked in insurance company. 
+                On maternity leave I started my acquaintance with programming with Harvard online course CS50. 
+                Sucsessfully finished it with final project on Python I continued to learn this language. 
+                Also I began learning Wordpress for my own needs. But it wasn't as interesting as writing code so I finished some courses on Udemy to try some new things. 
+                This way I dicided to deepen my knowledge in JS.
+
+                Being an active, curious person I like challenging tasks and aimed at solving problems. 
+                I am purposeful and detail-oriented developer with a high level of self-organization. 
             
-            I have a high level of self-organization, aimed at solving problems. I am persistent and purposeful, 
-                punctual and assiduous.
-            </p>
-            </section>
+            </p>   </div>
 
             <section class="cv-item education" id="education">
                 <h3 class="item-title">Education</h3>
-                <p class="item-info">
+                <div class="item-info">
                 Management of Organizations <br>
                 Kyiv National Economic University <br>
                 2000-2004
-                </p>
+                </div>
             </section>
 
             <section class="cv-item skills" id="skills">
             <h3 class="item-title">Skills and Proficiency</h3>
             <hr>
             <ul class="item-list">
-            <li class="skill-item"><div class="fff">HTML</div><div class="percent"><div class="percent-skills" style="width: 85%;"></div></div></li>
-            <li class="skill-item"><div class="fff">CSS</div><div class="percent"><div class="percent-skills" style="width: 85%;"></div></div></li>
-            <li class="skill-item"><div class="fff">Javascript</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
-            <li class="skill-item"><div class="fff">Wordpress</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
-            <li class="skill-item"><div class="fff">Git</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
-            <li class="skill-item"><div class="fff">Adobe Xd</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
-            <li class="skill-item"><div class="fff">Figma</div><div class="percent"><div class="percent-skills" style="width: 75%;"></div></div></li>
-            <li class="skill-item"><div class="fff">Python</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">HTML5</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">CSS, SASS/SCSS</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Javascript</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Wordpress</div><div class="percent"><div class="percent-skills" style="width: 50%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Git/GitHub</div><div class="percent"><div class="percent-skills" style="width: 40%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Adobe Xd</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Figma</div><div class="percent"><div class="percent-skills" style="width: 70%;"></div></div></li>
+            <li class="skill-item"><div class="skill_title">Python</div><div class="percent"><div class="percent-skills" style="width: 30%;"></div></div></li>
                 </ul>
             </section>
-
-            <section class="cv-item courses" id="courses">
-                <h3 class="item-title">Courses</h3>
-                <hr>
-                <ul class="item-list">
-            <li>Harvard CS50</li>
-            <li>Udemy: Learn to Program in Javascript: Beginner to Pro</li>
-            <li>Udemy: The Complete Web Developer Course 2.0</li>
-            <li>Udemy: The Python Mega Course: Build 10 Real World Applications</li>
-                </ul>
-            </section>
-
-            <section class="cv-item code" id="code"> 
-                <h3 class="item-title">Code example</h3>
-                <hr>
-
-            <p class="code-description">KATA from CODEWARS: In a small town there is the population (p0) 
-                at the beginning of a year. The population regularly increases by percents (percent) per year 
-                and moreover some new inhabitants (aug) per year come to live in the town. How many years (n) does 
-                the town need to see its population greater or equal to (p) inhabitants?</p>
-        
-    <code>
-    function nbYear(p0, percent, aug, p) { <br>
-        var counter = 1; <br>
-        for (var i = 0; p0 &lt; p; i++) { <br>
-            var population = p0 + 
-            Math.floor(p0/100*percent) + aug;<br>
-            p0 = population;<br>
-                
-            if (p0 &lt; p) {<br>
-                counter ++;<br>
-            } else {<br>
-                return counter;<br>
-            }<br>
-        }<br>
-    } 
-        
-            </code>
-        </section>
 
             <section class="cv-item languages" id="languages">
                 <h3 class="item-title">Languages</h3>
@@ -142,6 +100,72 @@
                 </ul>
             </section>
 
+            <section class="cv-item courses" id="courses">
+                <h3 class="item-title">Courses</h3>
+                <hr>
+                <ul class="item-list">
+            <li>Harvard CS50</li>
+            <li>Udemy: Learn to Program in Javascript: Beginner to Pro</li>
+            <li>Udemy: The Complete Web Developer Course 2.0</li>
+            <li>Udemy: The Python Mega Course: Build 10 Real World Applications</li>
+            <li>RS School: JS / FRONT-END. STAGE 0</li>
+                </ul>
+            </section>
+
+            <section class="projects" id="projects">
+                <h3 class="item-title">Projects</h3>
+                <hr>
+                <div class="project_list">
+                    <div class="project_card">
+                        <a href="https://rolling-scopes-school.github.io/lanaryashchenko-JSFEPRESCHOOL/portfolio/" class="project_link" target="_blank">
+                            <img class="project_img" src="project_1.png" alt="">
+                        </a>
+                        <div class="project_cover"><a href="https://rolling-scopes-school.github.io/lanaryashchenko-JSFEPRESCHOOL/portfolio/" class="project_link" target="_blank">Project "Portfolio": HTML, CSS, JS. Click to see it.</a>
+                        </div>  
+                    </div>
+
+                    <div class="project_card">
+                        <a href="https://lanaryashchenko.github.io/mywishes/" class="project_link" target="_blank">
+                        <img class="project_img" src="project_2.png" alt="">
+                    </a>
+                    <div class="project_cover"><a href="https://lanaryashchenko.github.io/mywishes/" class="project_link" target="_blank">Project "Wishlist": HTML, CSS, JS. Click to see it.</a></div>
+                </div>
+                </div>
+            </section>
+
+            <section class="cv-item code" id="code"> 
+                <h3 class="item-title">Code example</h3>
+                <hr>
+
+            <p class="code-description">The Fibonacci sequence:</p>
+    
+    <code>
+        function fib(num) { <br>
+            if (typeof(num) !== 'number' || num &lt;= 0 || !Number.isInteger(num)) { <br>
+                return ""; <br>
+            }<br>
+        
+            let result = ''; <br>
+            let first = 0;<br>
+            let second = 1;<br>
+        
+            for (let i = 0; i &lt;num; i++) {<br>
+                if (i + 1 === num) {<br>
+                    result += `${first}`;<br>
+                } else {<br>
+                    result += `${first} `;<br>
+                }<br>
+                let third = first + second;<br>
+                first = second;<br>
+                second = third;<br>
+            }<br>
+            return result;<br>
+        }
+    </code>
+        </section>
+
+           
+
         </div>
     </main>
 
@@ -150,13 +174,14 @@
             <img src="Octocat.png" alt="Github Icon" width="28" height="28">
             <p>My GitHub</p>
           </a>
-          <p class="year">2021</p>
-          <a class="rsschool" href="https://rs.school/js/">
+          <p class="year">2023</p>
+          <!--  <a class="rsschool" href="https://rs.school/js/">
             <img class="ttt" src="rss.svg" alt="Rsschool Icon" width="73" height="26">
-          </a>
+          </a> -->
 
 
     </footer>
     </div>  
+      <script src="index.js"></script>  
   </body>
 </html>
