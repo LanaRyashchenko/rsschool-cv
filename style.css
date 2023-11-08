@@ -60,15 +60,13 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 body {
     background-image: url(./bg.png);
 }
-    .container {
-        min-height: 100vh;
-        max-width: 1024px;
-        justify-content: center;
-        margin: 0 auto;
-        background-color: white;
-        padding: 0px 20px 20px;
-
-    }
+.container {
+    min-height: 100vh;
+    max-width: 1024px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0px 20px 20px;}
 /* HEADER */
 
     header {
@@ -224,6 +222,19 @@ body {
     background-color: var(--font-gold);
     border-radius: 0 20px 20px 0;
 }
+
+.html, .css, .adobe, .figma {
+    width: 70%;
+}
+
+.js, .python, .git {
+    width: 30%;
+}
+
+.wordpress {
+    width: 50%;
+}
+
 
 .about {
     margin-bottom: 20px;
