@@ -67,7 +67,7 @@ body {
         margin: 0 auto;
         background-color: white;
         padding: 0px 20px 20px;
-        
+
     }
 /* HEADER */
 
@@ -78,7 +78,7 @@ body {
         border-bottom-right-radius: 20px;
     }
 
-  
+
     .top-menu__link {
         text-decoration: none;
         color: var(--font-white);
@@ -109,7 +109,7 @@ body {
 
     }
 
-/* Main */ 
+/* Main */
     .main-part {
         display: flex;
         justify-content: center;
@@ -134,7 +134,7 @@ body {
        /* border: 4px solid var(--font-gold); */
         border-radius: 50%;
        margin: 20px 0px 40px;
-       
+
         }
         .person {
             text-transform: uppercase;
@@ -142,11 +142,11 @@ body {
             margin: 30px;
             letter-spacing: 2px;
         }
-    
+
         .name {
             font-size: var(--font28);
         }
-    
+
         .position {
             font-size: var(--font20);
             margin-top: 20px;
@@ -163,25 +163,25 @@ body {
             list-style-type: none;
             text-align: left;
         }
-    
+
         .contacts a {
             text-decoration: none;
             color: var(--font-white);
         }
-    
+
         .contacts a:hover {
             color: var(--font-black);
         }
 
-    
+
 /*right*/
 
     .right-part {
        width: 70%;
-    
+
       padding: 0px 0px 0px 20px;
     }
-  
+
     .item-title {
         font-size: var(--font20);
         text-transform: uppercase;
@@ -191,7 +191,7 @@ body {
     text-align: justify; /* Выравнивание по ширине */
     margin-bottom: 20px;
     color: var(--font-white);
-      
+
     }
 
     .item-info {
@@ -203,7 +203,7 @@ body {
     .item-list {
         line-height: 1.5;
         font-size: var(--font18);
-        
+
     }
     .skill-item {
         display: flex;
@@ -232,14 +232,14 @@ body {
     .cv-item {
         margin-bottom: 20px;
         color: black;
-     
+
     }
 
     .cv-item:last-child {
         margin-bottom: 0px;
     }
-    
-   
+
+
     .top_button {
         position: fixed;
         top: 90%;
@@ -261,7 +261,7 @@ body {
         color: var(--font-black)
     }
 
-   
+
     .code-description {
     margin-bottom: 10px;
     }
@@ -357,7 +357,7 @@ position: relative;
 
     code {
     font-size: var(--font14);
-   
+
     }
     }
 @media (max-width: 768px)  {
